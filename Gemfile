@@ -1,11 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem "rails", "3.0.3"
+gem "rake", "0.8.7"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem "mysql"
 gem 'twitter'
 gem 'whenever'
 gem 'mechanize'
@@ -37,9 +38,9 @@ group :development, :test do
 	gem 'rspec-rails', '>= 2.0.0.rc'
 
 	gem 'capybara'
-    gem 'database_cleaner'
-    gem 'cucumber-rails'
-    gem 'cucumber'
-    gem 'spork'
-    gem 'launchy'    # So you can do Then show me the page
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
 end
