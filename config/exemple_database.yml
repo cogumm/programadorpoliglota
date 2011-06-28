@@ -1,0 +1,21 @@
+# DRY
+login: &login
+  adapter: mysql
+  encoding: utf8
+  username: root
+  password: senha
+
+development:
+  <<: *login
+  database: poliglota_development
+
+test:
+  <<: *login
+  database: poliglota_test
+
+production:
+  <<: *login
+  database: poliglota_production
+
+cucumber:
+  <<: *test
